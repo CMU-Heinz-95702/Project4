@@ -1,14 +1,14 @@
 # Project 4
-- **Assigned: Monday March 17**
-- **Task 1 Due: Monday March 24, 2:00pm**
-- **Task 2 Due: Monday April 7, 2:00pm**
+- **Assigned: Friday October 31**
+- **Task 1 Due: Friday November 7, 11:59pm**
+- **Task 2 Due: Friday November 21, 11:59pm**
 
 Assigned by Marty Barrett
 Please direct questions to Piazza. Only email a TA or Marty if absolutely needed.
 
 **Three status notes:**
  - Like the other projects, you must do this project alone.
- - Information on how to deploy Task 2 to the cloud and how to submit Task 2 for grading has been added below.
+ - The updated information on how to deploy Task 2 to the cloud and how to submit Task 2 for grading has been added below.
   - The images have been re-labled to reflect using GitHub Codespaces.
 
 ## Project Topics: Mobile to Cloud application
@@ -50,8 +50,8 @@ f. A screenshot of the console output from section 2c.
 Do not submit your code. It will be integrated into Task 2.
 
 **Grading:**  
-- Task 1 complete and submitted on time: ***5 points Bonus***
-- Task 2 does ***not*** use the API demonstrated in Task 1:  ***10 points Penalty***
+- Task 1 complete and submitted on time: Bonus 5 points
+- Task 2 does not use the API demonstrated in Task 1:  Penalty 10 points
 
 If you don’t submit Task 1 on time, you get no bonus points.
 
@@ -62,9 +62,10 @@ If you do not use the API submitted in Task 1 on time, you still get the 5 bonus
 Grace days **cannot** be used for Task 1.  Grace days, if you have some remaining, can be used for Tasks 2.
 
 **Banned APIs:** There are a number of APIs that have been used too often and are no longer interesting in this class.  Therefore, you **cannot** use any of the following:
-- anything related to Project 1 (U.S. National Parks, weather)
+- anything related to Project 1 (flags, simple country data), but you can do something with more detailed country demographics or trends.
 - Agify.io
 - Alpha Vantage
+- any beer API (choose by type, etc.)
 - Dog.ceo
 - Eventful
 - Flickr (we've have already done that)
@@ -72,6 +73,7 @@ Grace days **cannot** be used for Task 1.  Grace days, if you have some remainin
 - IsEvenAPI.xyz
 - Last.fm
 - Merriam-Webster Dictionary
+- mixed drinks (how-to's, catalogs)
 - NASA Astronomy Picture of the Day
 -	NYTimes APIs: specifically top stories, news wires, popular, and books.
 -	OpenMovieDatabase
@@ -108,11 +110,9 @@ In detail, your distributed application should satisfy the following requirement
 
 ### Distributed Application Requirements
 ##### 1.	Implement a native Android application
-
 a.	Has at least three different kinds of Views in your Layout (TextView, EditText, ImageView, or anything that extends android.view.View). **In order to figure out if something is a View, find its API.  If it extends android.view.View then it is a View.**  
 b.	Requires input from the user  
-c.	Makes an HTTP request (using an appropriate HTTP method) to your web service. Note that this request ***must*** be done using a background thread (see Lab 8's use of BackgroundTask)
-
+c.	Makes an HTTP request (using an appropriate HTTP method) to your web service  
 d.	Receives and parses an XML or JSON formatted reply from your web service  
 e.	Displays new information to the user  
 f.	Is repeatable (I.e. the user can repeatedly reuse the application without restarting it.)
@@ -121,11 +121,11 @@ f.	Is repeatable (I.e. the user can repeatedly reuse the application without res
 a.	Implement a simple (can be a single path) API.  
 b.	Receives an HTTP request from the native Android application  
 c.	Executes business logic appropriate to your application.  This includes fetching XML or JSON information from some 3rd party API and processing the response.
-- -10 points if you use a banned API
-- -10 points if screen scrape instead of fetching XML or JSON via a published API
+- -10 if you use a banned API
+- -10 if screen scrape instead of fetching XML or JSON via a published API
 
 d.	Replies to the Android application with an XML or JSON formatted response. The schema of the response can be of your own design.  
--	-5 points if more information is returned to the Android app that is needed, forcing the mobile app to do more computing than is necessary. The web service should select and pass on only the information that the mobile app needs.
+-	-5 if more information is returned to the Android app that is needed, forcing the mobile app to do more computing than is necessary. The web service should select and pass on only the information that the mobile app needs.
 
 **Use Servlets, not JAX-RS, for your web services.** Students have had issues deploying web applications built with JAX-RS to Docker Containers and a solution has not yet been found.
 
@@ -202,7 +202,7 @@ h. To deploy your own web service, create a ROOT.war like you did in Lab 3, uplo
 
 ### Writeup
 
-Because each student's distributed application will be different, you are responsible for making it clear to the TAs how you have met these requirements, and it is in your best interest to do so. You will lose points if you don't make it clear how you have met the requirements. Therefore, you must create a document describing how you have met each of the requirements (1 – 7) above (you do **not** need to document _3. Handle error conditions_.) Your writeup will guide the TAs in grading your application.  See the provided example ([Project4Task1Writeup.pdf](https://github.com/CMU-Heinz-95702/Project4/blob/master/docs/Project4-WriteUp.pdf)) for the content and style of this document.
+Because each student's distributed application will be different, you are responsible for making it clear to the TAs how you have met these requirements, and it is in your best interest to do so. You will lose points if you don't make it clear how you have met the requirements. Therefore, you must create a document describing how you have met each of the requirements (1 – 7) above (you do **not** need to document _3. Handle error conditions_.) Your writeup will guide the TAs in grading your application.  See the provided example ([Project4Task1Writeup.pdf](https://github.com/CMU-Heinz-95702/Project4/blob/master/docs/Project4-WriteUp.pdf)) for the content and style of this document (but note that you're not using Heroku, you'll be using Codespaces instead).
 
 Alternatively, instead of a document, you may submit a narrated screencast that includes the same information that would be in the writeup.
 
