@@ -188,7 +188,7 @@ a. Accept the Github Classroom Assignment that you have been given the URL for. 
 
 b. Click the green <> Code dropdown button, select the Codespaces tab, then click on "Create codespace on master".
 
-c. Once the Codespace is running, the Terminal tab will show that Catalina (the Servlet container) is running.  You should also see a "1" next to the Ports tab.  Click on the Ports tab and you should see that port 8080 has been made available.  
+c. Once the Codespace is running, the Terminal tab will show that Catalina (the Servlet container) is running.  You should also see a "1" next to the Ports tab.  Click on the Ports tab and you should see that port 8080 has been made available.  (Note: If you do not see the server running from the get-go (start of codespace), and do not see any port(8080) active, be sure to try running the 'build-and-run.sh' bash file by running `./build-and-run.sh' on the terminal. Confirm that the file is located and the root level of the project directory, and on the same level as your Dockerfile)
 
 d. Mouse over the Local address item of the port 8080 line and you will find three icons.  The leftmost is to copy the URL of your deployed application, the middle one (a globe) is to launch that URL in a browser.  Clicking on the globe is a quick way to test your web service in a browswer.  The copy is useful to use the URL in your Android App.
 
